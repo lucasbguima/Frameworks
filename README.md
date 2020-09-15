@@ -6,5 +6,6 @@
 
 Programa            | Aplicação | Banco | Framework
 ----------------- | -------- | :---------: | :---------:
-[CRUD Laravel + MySQL](https://github.com/lucasbguima/Sistemas/blob/master/Sistema%20de%20Tickets/ticket.c)  | Cria postagens em GRID para feed de produtos dinâmico. | MySQL | Laravel
-[CRUD Express.js + MongoDB ](https://github.com/lucasbguima/Sistemas/blob/master/Sistema%20Fockus/fockus.html)  | Cria publicações em GRID para timeline ao vivo. | MongoDB | Express.js
+[CRUD Laravel + MySQL](https://github.com/lucasbguima/Frameworks/tree/master/CRUD%20Laravel)  | Cria posts de produtos com rotas dinâmicas e index em grid. | MySQL | Laravel
+[CRUD Express.js + MongoDB ](https://github.com/lucasbguima/Frameworks/tree/master/CRUD%20Express)  | Cria posts de comentários gerados client-side e salvos dinamicamente no server-side.  | MongoDB | Express.js
+[CRUD Django + MySQL ](https://github.com/lucasbguima/Frameworks/tree/master/CRUD%20Django)  | Cria tabelas na web via Pandas e Consumo de APIs.| MySQL | Django
