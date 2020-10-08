@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+  
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+/*Divs*/
+  body{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  height: 100%;
+  }
+  div.header{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr [col-start]);
+  grid-template-areas: 
+    "logo none cadastro";
+  background-color: black;
+  justify-items: center;
+  align-items: center;
+  height: 100px;
+  }
+  div.logo{
+    grid-area: logo;
+  }
+  div.cadastro{
+    grid-area: cadastro;
+    padding: 20px;
+    background-color: rgb(72, 92, 75);
+    border-radius: 20px;
+  }
+  div.cadastro:hover{
+    cursor: pointer;
+  }
+  div.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr [col-start]);
+    grid-template-rows: repeat(1, 1fr [col-start]);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+  div.form{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr [col-start]);
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+  }
+
+  div.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr [col-start]);
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    height: 100px;
+  
+    }
+  a{
+    all:unset;
+    color: rgb(34, 126, 247);
+    font-family: arial;
+  }
+  a:hover{
+    cursor: pointer;
+  }
+  a.form{
+    justify-self: center;
+  }
+  p.form{
+    justify-self: center;
+  }
+  p{
+    font-family: arial;
+  }
+  form.form{
+    display: grid;
+    justify-self: center;
+    background-color: black;
+    padding: 40px;
+    border-radius: 10px;
+  }
+  input.form{
+    margin: 5px;
+    width: 300px;
+    padding:10px;
+    justify-self: center;
+  }
+  button.form{
+    padding: 10px;
+    justify-self: center;
+  }
+  button.form:hover{
+    cursor: pointer;
+  }
+
+/*Imgs*/
+
+  img.product{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p.logo{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+
+  }
+  p.cadastro{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+  }
+
+  p.title{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  p.price{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(84, 206, 13);
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+
+  }
+
+  p.description{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p.copy{
+    color:white;
+    text-align: center;
+  }
+  p.social{
+    color:white;
+    text-align: center;
+  }

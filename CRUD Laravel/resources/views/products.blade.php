@@ -1,29 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Products</title>
-</head>
-<body>
+@extends('home')
+
+@section('content')
 <div class="products">
-    <div id="p1">
-        <p>Produto 1</p>
-        <img src="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sed, expedita consectetur libero recusandae omnis aliquam tempore vitae ullam? Hic nobis illum eos, possimus culpa aut ad eius expedita molestiae?</p>
-    </div>
-    <div id="p2">
-        <p>Produto 2</p>
-        <img src="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sed, expedita consectetur libero recusandae omnis aliquam tempore vitae ullam? Hic nobis illum eos, possimus culpa aut ad eius expedita molestiae?</p>
-    </div>
-    <div id="p3">
-        <p>Produto 3</p>
-        <img src="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sed, expedita consectetur libero recusandae omnis aliquam tempore vitae ullam? Hic nobis illum eos, possimus culpa aut ad eius expedita molestiae?</p>
-    </div>
+<div id="p1">
+    <img class="product" src="https://www.imgeletro.com.br/900x900/produto/marketplace_5e872eae575f90.83763356.jpg">
+    <p class="title">Smart Tv Led Lg 24"</p>
+    <p class="price">R$799,00</p>
 </div>
-    
-</body>
-</html>
+<div id="p2">
+    <img class="product" src="https://www.imgeletro.com.br/900x900/produto/marketplace_5e0dde6b02cba1.92454822.jpeg">
+    <p class="title">Xiaomi Redmi 8A Preto</p>
+    <p class="price">R$1.349,99</p>
+</div>
+<div id="p3">
+    <img class="product" src="https://www.imgeletro.com.br/900x900/produto/1208112_12877164_20190905084249.jpg">
+    <p class="title">Mini System LG 620W</p>
+    <p class="price">R$1.249,90</p>
+</div>
+</div>
+@endsection

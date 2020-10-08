@@ -17,6 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('author');
             $table->string('title');
+            $table->string('url');
             $table->text('description');
             $table->float('price');
             $table->timestamps();
