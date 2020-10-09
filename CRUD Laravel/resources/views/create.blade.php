@@ -6,9 +6,9 @@
 
     <form class="form" method="post" action="/products">
     @csrf
-    <input type="text" name="name" placeholder="Nome do Produto" autocomplete="off" class="form" /><br/>
-    <input type="text" name="url" placeholder="Url da Imagem do Produto" autocomplete="off" class="form" /><br/>
-    <input type="float" name="price" placeholder="Preço do Produto" autocomplete="off" class="form" /><br/>
+    <input type="text" name="title" placeholder="Nome do Produto" autocomplete="off" class="form" />
+    <input type="text" name="url" placeholder="Url da Imagem do Produto" autocomplete="off" class="form" />
+    <input  type="number" step="0.01" name="price" placeholder="Preço do Produto" autocomplete="off" class="form" />
     <button id="btn" type="submit" class="form">Cadastrar Produto</button>
     </form>
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
@@ -16,7 +17,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('products');
+        $products = Product::all();
+        return view('products', compact('products'));
     }
 
     /**
@@ -37,7 +39,10 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+    $product = Product::create($request->all());
+    if($product) {
+    return redirect()->route('products.index');
+    }
     }
 
     /**
@@ -59,7 +64,13 @@ class ProductController extends Controller
      */
     public function edit($id)
     {
-        //
+    $product = Product::findOrFail($id);
+    if ($product) {
+    return view('update', compact('product'));
+    } else {
+    return redirect()->back();
+    }
+
     }
 
     /**
@@ -71,7 +82,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+    $product = Product::where('id', $id)->update($request->except('_token', '_method'));
+ 
+    if ($product) {
+    return redirect()->route('products.index');
+    }
     }
 
     /**
@@ -82,6 +97,10 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+    $product = Product::where('id', $id)->delete();
+       
+    if ($product) {
+            return redirect()->route('products.index');
+    }
     }
 }
